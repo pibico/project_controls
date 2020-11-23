@@ -1,0 +1,186 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2020-11-04 11:02:34.600710",
+ "description": "Cost Breakdown Structure or Financial Structure for Cost Control and Production Control",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_0",
+  "column_break0",
+  "disabled",
+  "financial_task_type",
+  "financial_task_number",
+  "financial_task_name",
+  "column_break1",
+  "financial_task_group",
+  "is_group",
+  "parent_financial_task",
+  "old_parent",
+  "section_break_1",
+  "financial_task_description",
+  "lft",
+  "rgt"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disable"
+  },
+  {
+   "fieldname": "financial_task_type",
+   "fieldtype": "Select",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Financial Task Type",
+   "options": "\nSUMMARY\nDeliverable\nMaterial\nEquipment\nServices\nPeople",
+   "reqd": 1,
+   "search_index": 1,
+   "translatable": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "financial_task_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Financial Task Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "financial_task_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Financial Task Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "financial_task_group",
+   "fieldtype": "Select",
+   "label": "Financial Task Group",
+   "options": "\nExpense\nIncome",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "parent_financial_task",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Financial Task",
+   "options": "Financial Task",
+   "search_index": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Financial Task"
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "financial_task_description",
+   "fieldtype": "Long Text",
+   "label": "Financial Task Description"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "icon": "fa fa-money",
+ "is_tree": 1,
+ "modified": "2020-11-20 13:42:27.822715",
+ "modified_by": "Administrator",
+ "module": "Project Controls",
+ "name": "Financial Task",
+ "name_case": "Title Case",
+ "nsm_parent_field": "parent_financial_task",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Auditor",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1
+  }
+ ],
+ "search_fields": "financial_task_number",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

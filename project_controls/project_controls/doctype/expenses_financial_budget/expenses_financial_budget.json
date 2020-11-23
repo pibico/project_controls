@@ -1,0 +1,223 @@
+{
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2020-11-04 16:10:40.094268",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "financial_budget_code",
+  "financial_budget_name",
+  "financial_budget_type",
+  "total_amount",
+  "col_break_0",
+  "posting_date",
+  "actual_amount",
+  "total_projection",
+  "profit",
+  "section_break_desc",
+  "financial_budget_description",
+  "section_break_ass",
+  "quotation",
+  "col_break_2",
+  "project",
+  "html_summary",
+  "section_break_0",
+  "financial_budget_item",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "financial_budget_code",
+   "fieldtype": "Data",
+   "label": "Financial Budget Code",
+   "length": 9
+  },
+  {
+   "fieldname": "financial_budget_name",
+   "fieldtype": "Data",
+   "label": "Financial Budget Name",
+   "length": 45
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col_break_0",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.financial_budget_type===\"Project\"",
+   "fieldname": "actual_amount",
+   "fieldtype": "Currency",
+   "label": "Actual Amount",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.financial_budget_type===\"Project\"",
+   "fieldname": "total_projection",
+   "fieldtype": "Currency",
+   "label": "Total Projection",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.financial_budget_type===\"Project\"",
+   "fieldname": "profit",
+   "fieldtype": "Currency",
+   "label": "Profit",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_desc",
+   "fieldtype": "Section Break",
+   "label": "Financial Budget Details"
+  },
+  {
+   "fieldname": "financial_budget_description",
+   "fieldtype": "Text Editor",
+   "label": "Description"
+  },
+  {
+   "collapsible": 1,
+   "collapsible_depends_on": "eval:doc.project || doc.quotation",
+   "fieldname": "section_break_ass",
+   "fieldtype": "Section Break",
+   "label": "Linked Transactions"
+  },
+  {
+   "depends_on": "eval:doc.financial_budget_type===\"Quotation\"",
+   "fieldname": "quotation",
+   "fieldtype": "Link",
+   "label": "Quotation",
+   "options": "Quotation"
+  },
+  {
+   "fieldname": "col_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "eval:doc.financial_budget_type===\"Project\"",
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "section_break_0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "financial_budget_item",
+   "fieldtype": "Table",
+   "label": "Financial Budget Item",
+   "options": "Financial Budget Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expenses Financial Budget",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "financial_budget_type",
+   "fieldtype": "Select",
+   "label": "Financial Budget Type",
+   "options": "\nQuotation\nProject",
+   "reqd": 1,
+   "translatable": 1
+  },
+  {
+   "depends_on": "eval:doc.project",
+   "fieldname": "html_summary",
+   "fieldtype": "HTML",
+   "ignore_xss_filter": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-11-23 11:26:52.400556",
+ "modified_by": "Administrator",
+ "module": "Project Controls",
+ "name": "Expenses Financial Budget",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
