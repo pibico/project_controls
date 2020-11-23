@@ -23,8 +23,8 @@ def get_time(project):
 
 @frappe.whitelist()
 def get_assignment(employee):
-  """ Get from database all assignments to an employee """
-  data = frappe.db.sql("""SELECT * from `tabAssignment Detail` WHERE parent=%s and docstatus<2""", employee, True)
+  """ Get from database all non closed assignments to an employee """
+  data = frappe.db.sql("""SELECT * from `tabAssignment Detail` WHERE parent=%s and docstatus<2 and to_time=null""", employee, True)
   return data
   
 @frappe.whitelist()
