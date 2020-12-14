@@ -133,4 +133,4 @@ jenv = {
 # 	"Task": "project_controls.task.get_dashboard_data"
 # }
 
-fixtures = ['Custom Field']
+fixtures = ['Custom Field', 'Custom Script']
