@@ -147,6 +147,9 @@
   {
    "fieldname": "financial_budget_type",
    "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Financial Budget Type",
    "options": "\nQuotation\nProject",
    "reqd": 1,
@@ -160,7 +163,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-11-23 20:57:23.391884",
+ "modified": "2020-12-14 16:47:54.815381",
  "modified_by": "Administrator",
  "module": "Project Controls",
  "name": "Expenses Financial Budget",
