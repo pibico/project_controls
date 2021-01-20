@@ -5,6 +5,44 @@
   "disabled": 0,
   "docstatus": 0,
   "doctype": "Report",
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Sales Invoice\",\"company\",\"=\",\"SME\"]],\"fields\":[[\"name\",\"Sales Invoice\"],[\"docstatus\",\"Sales Invoice\"],[\"title\",\"Sales Invoice\"],[\"customer\",\"Sales Invoice\"],[\"company\",\"Sales Invoice\"],[\"grand_total\",\"Sales Invoice\"],[\"status\",\"Sales Invoice\"],[\"currency\",\"Sales Invoice\"],[\"customer_name\",\"Sales Invoice\"],[\"base_grand_total\",\"Sales Invoice\"],[\"outstanding_amount\",\"Sales Invoice\"],[\"due_date\",\"Sales Invoice\"],[\"is_return\",\"Sales Invoice\"]],\"order_by\":\"`tabSales Invoice`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"title\":120,\"customer\":120,\"company\":120,\"grand_total\":120,\"status\":120,\"currency\":120,\"customer_name\":120,\"base_grand_total\":120,\"outstanding_amount\":120,\"due_date\":120,\"is_return\":120},\"group_by\":null}",
+  "letter_head": "PibiCo",
+  "modified": "2020-12-16 10:03:32.812603",
+  "module": "Accounts",
+  "name": "Estado Facturas Venta",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Sales Invoice",
+  "reference_report": null,
+  "report_name": "Estado Facturas Venta",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Estado Facturas Venta",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Estado Facturas Venta",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
   "is_standard": "Yes",
   "javascript": null,
   "json": null,
