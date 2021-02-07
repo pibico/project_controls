@@ -43,7 +43,7 @@ class ActivityEntry(Document):
             "activity_type": self.activity_type,
             "project": self.project,
             "task": self.task,
-            "from_time": self.from_time,
+            "from_time": datetime.datetime.strptime(self.to_time, "%Y-%m-%d %H:%M:%S"),
             "item_code": self.item_code
           }
           timesheet.append("time_logs", time_logs)
