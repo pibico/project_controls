@@ -30,11 +30,25 @@ class ActivityEntry(Document):
         timesheet.save()
         frappe.db.commit()
       else:
+        tarea = '' 
         ## Update existing child row
         for row in timesheet.get('time_logs'):
           if not row.to_time:
             row.to_time =  datetime.datetime.strptime(self.to_time, "%Y-%m-%d %H:%M:%S")
-            row.save()  
+            row.save()
+            tarea = row.task
+        if tarea not in [self.task, '']:
+          ## Create new child
+          time_logs = {
+            "activity_type": self.activity_type,
+            "project": self.project,
+            "task": self.task,
+            "from_time": self.from_time,
+            "item_code": self.item_code
+          }
+          timesheet.append("time_logs", time_logs)
+          timesheet.save()
+          frappe.db.commit()
         if self.notes:
           timesheet.note = timesheet.note + " | " + datetime.datetime.strftime(datetime.datetime.now(), "%Y-%m-%d %H:%M:%S") + " " + self.notes
           timesheet.save()
