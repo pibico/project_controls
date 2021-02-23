@@ -1,6 +1,38 @@
 [
  {
   "default_value": null,
+  "doc_type": "Quotation",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocType",
+  "field_name": null,
+  "modified": "2021-01-21 17:19:58.936288",
+  "name": "Quotation-max_attachments",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "max_attachments",
+  "property_type": "Int",
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Employee",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "naming_series",
+  "modified": "2021-02-15 08:46:50.440421",
+  "name": "Employee-naming_series-options",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "options",
+  "property_type": "Text",
+  "value": "HR-EMP-"
+ },
+ {
+  "default_value": null,
   "doc_type": "Employee",
   "docstatus": 0,
   "doctype": "Property Setter",
