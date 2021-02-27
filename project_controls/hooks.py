@@ -133,4 +133,4 @@ jenv = {
 # 	"Task": "project_controls.task.get_dashboard_data"
 # }
 
-fixtures = ['Report', 'Role Profile', 'Role', 'Custom Field', 'Custom Script', 'Property Setter', 'Workflow', 'Workflow State', 'Workflow Action', 'Translation']
+fixtures = ['Report', 'Role Profile', 'Role', 'Custom Field', 'Custom Script', 'Property Setter', 'Workflow', 'Workflow State', 'Workflow Action', 'Translation', 'Website Settings', 'Print Format']

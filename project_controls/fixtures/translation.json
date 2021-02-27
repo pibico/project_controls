@@ -97676,5 +97676,19 @@
   "source_name": "Document Details",
   "status": "Saved",
   "target_name": "Propiedades del Documento"
+ },
+ {
+  "contributed_translation_doctype_name": null,
+  "docstatus": 0,
+  "doctype": "Translation",
+  "language": "es",
+  "modified": "2021-02-27 08:10:36.862291",
+  "name": "7176b8d8ff",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "source_name": "Bin",
+  "status": "Saved",
+  "target_name": "Compartimento"
  }
 ]

@@ -7376,5 +7376,143 @@
     "role": "Stock User"
    }
   ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"name\",\"Lead\"],[\"lead_name\",\"Lead\"],[\"company_name\",\"Lead\"],[\"lead_owner\",\"Lead\"],[\"status\",\"Lead\"],[\"organization_lead\",\"Lead\"],[\"email_id\",\"Lead\"],[\"source\",\"Lead\"],[\"campaign_name\",\"Lead\"],[\"contact_date\",\"Lead\"],[\"salutation\",\"Lead\"],[\"fax\",\"Lead\"],[\"territory\",\"Lead\"],[\"_user_tags\",\"Lead\"],[\"phone\",\"Lead\"],[\"mobile_no\",\"Lead\"],[\"customer\",\"Lead\"]],\"order_by\":\"`tabLead`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"lead_name\":120,\"company_name\":120,\"lead_owner\":120,\"status\":120,\"organization_lead\":120,\"email_id\":120,\"source\":120,\"campaign_name\":120,\"contact_date\":100,\"salutation\":120,\"fax\":120,\"territory\":120,\"_user_tags\":120,\"phone\":120,\"mobile_no\":120,\"customer\":120},\"group_by\":null}",
+  "letter_head": "PibiCo",
+  "modified": "2021-02-24 11:13:40.596377",
+  "module": "CRM",
+  "name": "Informe Situacion Iniciativas",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Lead",
+  "reference_report": null,
+  "report_name": "Informe Situacion Iniciativas",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Informe Situacion Iniciativas",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Informe Situacion Iniciativas",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "Informe Situacion Iniciativas",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"name\",\"Quotation\"],[\"quotation_to\",\"Quotation\"],[\"party_name\",\"Quotation\"],[\"company\",\"Quotation\"],[\"transaction_date\",\"Quotation\"],[\"valid_till\",\"Quotation\"],[\"order_type\",\"Quotation\"],[\"currency\",\"Quotation\"],[\"base_grand_total\",\"Quotation\"],[\"grand_total\",\"Quotation\"],[\"status\",\"Quotation\"],[\"conversion_rate\",\"Quotation\"],[\"price_list_currency\",\"Quotation\"],[\"base_net_total\",\"Quotation\"],[\"total_cost\",\"Quotation\"],[\"coupon_code\",\"Quotation\"],[\"margin_type\",\"Quotation Item\"],[\"discount_amount\",\"Quotation Item\"],[\"rule_applied\",\"Pricing Rule Detail\"],[\"payment_term\",\"Payment Schedule\"]],\"order_by\":\"`tabQuotation`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"quotation_to\":120,\"party_name\":120,\"company\":150,\"transaction_date\":100,\"valid_till\":120,\"order_type\":120,\"currency\":100,\"base_grand_total\":200,\"grand_total\":200,\"status\":120,\"conversion_rate\":100,\"price_list_currency\":120,\"base_net_total\":100,\"total_cost\":120,\"coupon_code\":120,\"Quotation Item:margin_type\":120,\"Quotation Item:discount_amount\":120,\"Pricing Rule Detail:rule_applied\":120,\"Payment Schedule:payment_term\":120},\"group_by\":null}",
+  "letter_head": "PibiCo",
+  "modified": "2021-02-24 11:17:14.248826",
+  "module": "Selling",
+  "name": "Informe Situacion Ofertas",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Quotation",
+  "reference_report": null,
+  "report_name": "Informe Situacion Ofertas",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Informe Situacion Ofertas",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Informe Situacion Ofertas",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "Informe Situacion Ofertas",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance Manager"
+   },
+   {
+    "parent": "Informe Situacion Ofertas",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"name\",\"Lead\"],[\"docstatus\",\"Lead\"],[\"lead_name\",\"Lead\"],[\"company_name\",\"Lead\"],[\"lead_owner\",\"Lead\"],[\"status\",\"Lead\"],[\"organization_lead\",\"Lead\"],[\"email_id\",\"Lead\"],[\"source\",\"Lead\"],[\"campaign_name\",\"Lead\"],[\"contact_date\",\"Lead\"],[\"salutation\",\"Lead\"],[\"fax\",\"Lead\"],[\"territory\",\"Lead\"],[\"_user_tags\",\"Lead\"],[\"phone\",\"Lead\"],[\"mobile_no\",\"Lead\"],[\"customer\",\"Lead\"]],\"order_by\":\"`tabLead`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"lead_name\":120,\"company_name\":120,\"lead_owner\":120,\"status\":120,\"organization_lead\":120,\"email_id\":120,\"source\":120,\"campaign_name\":120,\"contact_date\":100,\"salutation\":120,\"fax\":120,\"territory\":120,\"_user_tags\":120,\"phone\":120,\"mobile_no\":120,\"customer\":120},\"group_by\":null}",
+  "letter_head": "PibiCo",
+  "modified": "2021-02-26 12:41:45.564140",
+  "module": "CRM",
+  "name": "Informe Electroinnova",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Lead",
+  "reference_report": null,
+  "report_name": "Informe Electroinnova",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Informe Electroinnova",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Informe Electroinnova",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "Informe Electroinnova",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
  }
 ]
