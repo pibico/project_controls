@@ -32,5 +32,29 @@ def get_data():
           "onboard": 1,
         }        
       ]
+    },
+    {
+      "label": _("Deliverable Settings"),
+      "icon": "fa fa-star",
+      "items": [
+        {
+          "type": "doctype",
+          "name": "Stamp",
+          "description": _("Stamp"),
+          "onboard": 1,
+        },
+        {
+          "type": "doctype",
+          "name": "Discipline",
+          "description": _("Discipline"),
+          "onboard": 1,
+        },
+        {
+          "type": "doctype",
+          "name": "Delivery Purpose",
+          "description": _("Delivery Purpose"),
+          "onboard": 1,
+        }             
+      ]
     }
   ]
