@@ -7,6 +7,50 @@
   "doctype": "Report",
   "is_standard": "No",
   "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"name\",\"Serial No\"],[\"item_code\",\"Serial No\"],[\"warehouse\",\"Serial No\"],[\"batch_no\",\"Serial No\"],[\"document_superseeded\",\"Serial No\"],[\"discipline\",\"Serial No\"],[\"delivery_document_type\",\"Serial No\"],[\"status\",\"Serial No\"],[\"serial_no\",\"Serial No\"],[\"is_deliverable\",\"Serial No\"],[\"brand\",\"Serial No\"],[\"item_group\",\"Serial No\"],[\"sales_order\",\"Serial No\"],[\"edition\",\"Serial No\"],[\"revision\",\"Serial No\"],[\"document_description\",\"Serial No\"],[\"external_number\",\"Serial No\"],[\"internal_number\",\"Serial No\"],[\"original_file\",\"Serial No\"],[\"secondary_file\",\"Serial No\"],[\"pdf_file\",\"Serial No\"],[\"to_customer\",\"Serial No\"],[\"customer_date\",\"Serial No\"],[\"customer_updated\",\"Serial No\"],[\"customer_comments\",\"Serial No\"],[\"customer_file\",\"Serial No\"],[\"to_review\",\"Serial No\"],[\"committed_date\",\"Serial No\"],[\"updated_date\",\"Serial No\"],[\"review_comments\",\"Serial No\"],[\"review_file\",\"Serial No\"],[\"document_responsible\",\"Serial No\"],[\"recipients\",\"Serial No\"],[\"purchase_date\",\"Serial No\"],[\"purchase_document_no\",\"Serial No\"],[\"supplier\",\"Serial No\"],[\"delivery_document_no\",\"Serial No\"],[\"delivery_date\",\"Serial No\"],[\"customer\",\"Serial No\"],[\"_comments\",\"Serial No\"],[\"_user_tags\",\"Serial No\"],[\"_assign\",\"Serial No\"]],\"order_by\":\"`tabSerial No`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"item_code\":120,\"warehouse\":120,\"batch_no\":120,\"document_superseeded\":120,\"discipline\":120,\"delivery_document_type\":120,\"status\":120,\"serial_no\":120,\"is_deliverable\":120,\"brand\":120,\"item_group\":120,\"sales_order\":120,\"edition\":120,\"revision\":120,\"document_description\":120,\"external_number\":120,\"internal_number\":120,\"original_file\":120,\"secondary_file\":120,\"pdf_file\":120,\"to_customer\":120,\"customer_date\":120,\"customer_updated\":120,\"customer_comments\":120,\"customer_file\":120,\"to_review\":120,\"committed_date\":120,\"updated_date\":120,\"review_comments\":120,\"review_file\":120,\"document_responsible\":120,\"recipients\":120,\"purchase_date\":120,\"purchase_document_no\":120,\"supplier\":120,\"delivery_document_no\":120,\"delivery_date\":120,\"customer\":120,\"_comments\":120,\"_user_tags\":120,\"_assign\":120},\"group_by\":null}",
+  "letter_head": "PibiCo",
+  "modified": "2021-03-17 22:29:20.187754",
+  "module": "Stock",
+  "name": "Listado de Entregables",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Serial No",
+  "reference_report": null,
+  "report_name": "Listado de Entregables",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Listado de Entregables",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "Listado de Entregables",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Listado de Entregables",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "is_standard": "No",
+  "javascript": null,
   "json": "{\"filters\":[[\"Sales Invoice\",\"company\",\"=\",\"SME\"]],\"fields\":[[\"name\",\"Sales Invoice\"],[\"docstatus\",\"Sales Invoice\"],[\"title\",\"Sales Invoice\"],[\"customer\",\"Sales Invoice\"],[\"company\",\"Sales Invoice\"],[\"grand_total\",\"Sales Invoice\"],[\"status\",\"Sales Invoice\"],[\"currency\",\"Sales Invoice\"],[\"customer_name\",\"Sales Invoice\"],[\"base_grand_total\",\"Sales Invoice\"],[\"outstanding_amount\",\"Sales Invoice\"],[\"due_date\",\"Sales Invoice\"],[\"is_return\",\"Sales Invoice\"]],\"order_by\":\"`tabSales Invoice`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"title\":120,\"customer\":120,\"company\":120,\"grand_total\":120,\"status\":120,\"currency\":120,\"customer_name\":120,\"base_grand_total\":120,\"outstanding_amount\":120,\"due_date\":120,\"is_return\":120},\"group_by\":null}",
   "letter_head": "PibiCo",
   "modified": "2020-12-16 10:03:32.812603",
