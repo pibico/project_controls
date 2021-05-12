@@ -21,8 +21,8 @@
  "is_standard": 1,
  "login_required": 1,
  "max_attachment_size": 10,
- "modified": "2021-02-15 10:11:47.053098",
- "modified_by": "Administrator",
+ "modified": "2021-04-09 08:25:51.660133",
+ "modified_by": "francisco.alaez@pibico.es",
  "module": "Project Controls",
  "name": "activity-registry",
  "owner": "Administrator",
@@ -35,7 +35,7 @@
  "show_sidebar": 0,
  "sidebar_items": [],
  "success_message": "Activity Entered!",
- "success_url": "/home_en",
+ "success_url": "/home_en?cmd=web_logout",
  "title": "Activity Registry",
  "web_form_fields": [
   {
