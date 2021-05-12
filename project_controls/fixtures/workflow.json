@@ -1,1 +1,174 @@
-[]
+[
+ {
+  "docstatus": 0,
+  "doctype": "Workflow",
+  "document_type": "Purchase Invoice",
+  "is_active": 1,
+  "modified": "2021-03-23 21:44:40.609990",
+  "name": "Purchase Invoice Approval",
+  "override_status": 0,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "send_email_alert": 1,
+  "states": [
+   {
+    "allow_edit": "Projects User",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": "Next step for Project Manager",
+    "next_action_email_template": "Aprobacion por Jefe Proyecto",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Pending",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Projects Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": "Next step for Purchase Revision",
+    "next_action_email_template": "Revision por Compras",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved by Project Manager",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Purchase User",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": "Next step for Procurement Manager",
+    "next_action_email_template": "Aprobacion Factura Compra por Direccion Compras",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Reviewed by Procurement User",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Purchase Manager",
+    "doc_status": "0",
+    "is_optional_state": 0,
+    "message": null,
+    "next_action_email_template": "Aprobacion Final Factura Compra",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved by Procurement Manager",
+    "update_field": null,
+    "update_value": null
+   },
+   {
+    "allow_edit": "Purchase Master Manager",
+    "doc_status": "1",
+    "is_optional_state": 0,
+    "message": "Final Approval Step",
+    "next_action_email_template": null,
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "states",
+    "parenttype": "Workflow",
+    "state": "Approved by CEO",
+    "update_field": null,
+    "update_value": null
+   }
+  ],
+  "transitions": [
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Projects Manager",
+    "condition": null,
+    "next_state": "Approved by Project Manager",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Projects Manager",
+    "condition": null,
+    "next_state": "Pending",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Pending"
+   },
+   {
+    "action": "Review",
+    "allow_self_approval": 1,
+    "allowed": "Purchase User",
+    "condition": null,
+    "next_state": "Reviewed by Procurement User",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Approved by Project Manager"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Purchase User",
+    "condition": null,
+    "next_state": "Pending",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Approved by Project Manager"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Purchase Manager",
+    "condition": null,
+    "next_state": "Approved by Procurement Manager",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Reviewed by Procurement User"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Purchase Manager",
+    "condition": null,
+    "next_state": "Pending",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Reviewed by Procurement User"
+   },
+   {
+    "action": "Approve",
+    "allow_self_approval": 1,
+    "allowed": "Purchase Master Manager",
+    "condition": null,
+    "next_state": "Approved by CEO",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Approved by Procurement Manager"
+   },
+   {
+    "action": "Reject",
+    "allow_self_approval": 1,
+    "allowed": "Purchase Master Manager",
+    "condition": null,
+    "next_state": "Pending",
+    "parent": "Purchase Invoice Approval",
+    "parentfield": "transitions",
+    "parenttype": "Workflow",
+    "state": "Approved by Procurement Manager"
+   }
+  ],
+  "workflow_name": "Purchase Invoice Approval",
+  "workflow_state_field": "workflow_state"
+ }
+]
