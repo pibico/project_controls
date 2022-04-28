@@ -1,4 +1,4 @@
-## Project Controls
+## Project Controls (DEPRECATED)
 
 Project Controls
 Frappe/ERPNext App to get Budget Control for Projects (not based in Accounting)
